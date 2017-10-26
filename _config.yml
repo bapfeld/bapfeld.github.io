@@ -1,0 +1,27 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+
+# Setup
+title:               Brendan Apfeld
+tagline:             'Graduate Student - University of Texas at Austin'
+description:         'Professional website for Brendan Apfeld'
+url:                 http://www.brendanapfeld.com
+baseurl:             ''
+paginate:            5
+markdown: kramdown
+drafts: false
+
+# About/contact
+author:
+  name:              Brendan Apfeld
+  email:             brendan.apfeld@utexas.edu
+  github_username:   bapfeld
+
+# Custom vars
+version:             1.0.0
+gems: [jekyll-gist, jekyll-paginate]
+# paginate: 5 # possibly unnecessary
+paginate_page: "page:num" #possibly unnecessary
+# highlighter: rouge
