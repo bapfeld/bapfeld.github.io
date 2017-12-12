@@ -78,9 +78,9 @@ First, some steps that you'll only have to do one time. These directions come fr
 There are a couple of ways to connect to your instance once it's running. The browser method wouldn't work for me, so my explanation will stick to the CLI method. [This](http://docs.aws.amazon.com/cli/latest/userguide/installing.html) article explains how to install these if you're not using mac and/or you don't have `pip` installed. You should also check [this page](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) out for more detailed information about getting the CLI ready to run. I'm just going to do a bare-bones intro here.
 
 1. Run `pip install --upgrade --user awscli` (or `pip3` as appropriate)
-2. Since this command installs the AWS ClI only for the local user, you'll have to make sure that you add it to your path (in my case this means adding export `export PATH=$PATH:~/Library/Python/3.6/lib` to my .bash_profile)
+2. Since this command installs the AWS ClI only for the local user, you'll have to make sure that you add it to your path (in my case this means adding export `export PATH=$PATH:~/Library/Python/3.6/bin` to my .bash_profile. See [here](http://docs.aws.amazon.com/cli/latest/userguide/installing.html) for system specific directions on making this run.)
 3. Run `aws configure` and enter the values as appropriate.
-    + Your Access key and Secret access key can be generated and downloaded (once only) from the IAM console
+    + Your Access key and Secret access key can be generated and downloaded (once only) from the IAM console. (But you can always add more, just go to IAM --> Users --> Security Credentials)
     + You need to set a default region. Mine is "us-east-2"
     + Default output options are "text", "json", or "table". I used "text", but you can always change this when you call a specific command (which is useful since `aws ec2 describe-instances` is pretty much unreadable in text format; solve this by adding `--output table`)
 
