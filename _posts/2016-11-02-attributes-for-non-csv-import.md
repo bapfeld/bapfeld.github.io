@@ -21,6 +21,16 @@ for(i in 1:ncol(foo)){
 var_labels <- data.frame(var = names(foo), label = label_value)
 ```
 
+UPDATE (1/21/18): I've realized that if you have a blank label value in a Stata dataset, instead of writing a blank string or something there, you just end up without that attribute, causing an error if you tried the run the code above. That's an easy fix:
+
+```r
+label_value <- c()
+for(i in 1:ncol(foo)){
+  label_value[i] <- ifelse(!is.null(attr(foo[[i]], "label")), attr(foo[[i]], "label"), NA)
+}
+var_labels <- data.frame(var = names(foo), label = label_value)
+```
+
 After importing the data, we extract the attribute called "label" from each variable. We then create a dataframe with the variable name itself along with the attribute we just extracted. You can search this in two ways. The first is manually (either within R - yuck, or exporting to a csv and using MS Excel) or you could try your hand at `grep()`. As an example, if you wanted to search for variables that contained the word "opinion" in them, you would do `grep("opinion", var_labels$label)`, which would return a vector of the row numbers that contained "opinion". You could also do `grep("opinion", var_label$label, value = TRUE)` to return what those labels actually are, but this is still a little complicated for using that information meaningfully. The best option is probably `var_labels[grep("opinion", var_labels$label),]`, which would return the rows from the `var_labels` dataframe that contain "opinion" along with the number of the row, making it simple to determine which variables you actually want.
 
 If you're not sure if your data has this attribute, run `str(foo)` and it should list any attributes. If you do, it will look something like this:
