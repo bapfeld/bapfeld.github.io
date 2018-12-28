@@ -20,7 +20,7 @@ Here are a few that come from base R (and can be applied in any situation)
                  stringsAsFactors = F)
  
  # The bad old way
- dat <- dat[which(dat$state == "Texas" | USarrests$state == "Wisconsin"),]
+ dat <- dat[which(dat$state == "Texas" | dat$state == "Wisconsin"),]
  
  # The better new way
  dat <- dat[which(dat$state %in% c("Texas", "Wisconsin"),]
