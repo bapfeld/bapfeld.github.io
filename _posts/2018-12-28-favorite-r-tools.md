@@ -169,6 +169,6 @@ And finally a few that come from other packages (but still work anywhere)
  ```
 
 [^1]: "Set," of course, has no special meaning in R, unlike other languages. I'm using it here to refer to any vector.
-[^3]: As an aside, the documentation actually notes that `assign` and `get` are inverse functions.
+[^2]: As an aside, the documentation actually notes that `assign` and `get` are inverse functions.
 [^3]: At least it doesn't as far as I'm aware. Please disabuse me of this idea if such a solution exists.
 
