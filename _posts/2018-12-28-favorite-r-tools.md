@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Favorite R Code"
+title: "Favorite R Tools"
 categories: [Code]
 tags: [R, Workflow]
 ---
-I also find that the longer I use R, the more my preferred solutions converge around a decreasing number of commands. But every now and then I find something new that makes life so much easier and it finds its way into my repertoire. Here's a quick post on some of these (code) life-changing commands. Some of these are fairly well-known, others less-so. 
+I find that the longer I use R, the more my preferred solutions converge around a decreasing number of commands. But every now and then I find something new that makes life so much easier and it finds its way into my repertoire. Here's a quick post on some of these (code) life-changing commands. Some of these are fairly well-known, others less-so. 
 
 # Base R functions
 Here are a few that come from base R (and can be applied in any situation)
