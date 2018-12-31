@@ -129,7 +129,7 @@ I imagine that the workflow for using this proceeds as follows. I'm going to ass
 - Similarly, this does some error checking on inputs, but there are probably some ways to make it break that I haven't thought of
 - If you are migrating from the vcode function, then be aware that this will run even with missing country names, though it should warn in that case
 
-## Code snipped specifically for Gleditsch and Ward Codes
+## Code snippet specifically for Gleditsch and Ward Codes
 Finally, if you ever need to merge data from Gleditsch and Ward's research (available on Kristian Gleditsch's [website](http://ksgleditsch.com/data.html)), here's a code snippet that will make your life easier. Their coding generally follows coding from the Correlates of War project, but there are a few minor differences, so this snippet will go from their codes to readable names.
 
 ```R
