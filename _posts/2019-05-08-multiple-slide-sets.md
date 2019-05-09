@@ -20,12 +20,11 @@ My first attempt at this failed. It involve an unwieldy Makefile that reran thin
 This semester things are different! I've solved my problems on attempt number 3.
 
 # Attempt Number 3
-There are really only 4 tools required here: pandoc, GNU make, \LaTeX, and your favorite text editor.
+There are really only 4 tools required here: pandoc, GNU make, LaTeX, and your favorite text editor.
 
 ## The org-mode header
 The first trick is to set things up correctly in the org-mode document header: 
 
-{% raw %}
 ```org-mode
 #+TITLE:     Some Title
 #+AUTHOR:    Me!
@@ -36,11 +35,9 @@ The first trick is to set things up correctly in the org-mode document header:
 #+LANGUAGE: en
 #+OPTIONS: toc:nil H:2
 #+LATEX_CLASS_OPTIONS: [aspectratio=1610]
-#+LATEX_HEADER: \setbeamertemplate{navigation symbols}{}%remove navigation symbols
-$0
-#+latex_header: \graphicspath{{/OSX/path/to/project/}{/Linux/path/to/project/}}
+#+LATEX_HEADER: \setbeamertemplate{navigation symbols}{} %remove navigation symbols
+{% raw %}#+latex_header: \graphicspath{{/OSX/path/to/project/}{/Linux/path/to/project/}}{% endraw %}
 ```
-{% endraw %}
 
 Most of that should be pretty self-explanatory, I think. I don't want a table of contents in the slides and the second level heading should define a new slide. 
 
@@ -58,7 +55,7 @@ Now come the templates. I have two of them, stored in a "templates" directory al
 
 \usepackage{calc}
 \newcounter{curslide}
-\addtobeamertemplate{note page}{%
+\addtobeamertemplate{note page}{
     \setcounter{curslide}{\thepage / 2}%
     SLIDE \thecurslide \par}{}
 
@@ -123,7 +120,7 @@ $(lsdn)/%.pdf: lecture_notes/%.org lecture_notes/templates/slide_notes_header.te
 
 ```
 
-There are a few crucial bits here. First, it uses the new pandoc convention where you specify modifiers with the `+` syntax. In this case, I want to process plain vertical quotation marks as "smart" (sloping or wrapping in the correct direction on each side). Second, the `-H` flag allows me to set the header. This doesn't replace the entire pandoc template header, but rather supplements it.[^pandoctemplate] Third, I can set \LaTeX class options with `==variable classoption=handout`. Doing this overwrites the classoption(s) set from within the org-mode document, though, so I have to also re-specify that aspectratio in two cases. 
+There are a few crucial bits here. First, it uses the new pandoc convention where you specify modifiers with the `+` syntax. In this case, I want to process plain vertical quotation marks as "smart" (sloping or wrapping in the correct direction on each side). Second, the `-H` flag allows me to set the header. This doesn't replace the entire pandoc template header, but rather supplements it.[^pandoctemplate] Third, I can set LaTeX class options with `==variable classoption=handout`. Doing this overwrites the classoption(s) set from within the org-mode document, though, so I have to also re-specify that aspectratio in two cases. 
 
 The display slides are more complicated because that's where I bring in the additional current events slides. I'm using `awk` to copy the slides (contained in a separate file) to just after the top matter in the slide file ends. Then everything gets processed as normal and cleaned up again at the end. Note that I *don't* include the current_events.org file as a prerequisite. If I were to do this, I'd end up remaking *all* of the display slides every time I updated that, which I don't want. This does mean that I have to force `make` to do what I want. I usually just use `touch` to update the timestamp on the slides I want to process. I know this breaks some of the automation, so if anybody has a better solution, I'm all ears. 
 
