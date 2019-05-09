@@ -39,7 +39,7 @@ The first trick is to set things up correctly in the org-mode document header:
 $0
 {% raw %}
 #+latex_header: \graphicspath{{/OSX/path/to/project/}{/Linux/path/to/project/}}
-{ %endraw$ }
+{% endraw %}
 ```
 
 Most of that should be pretty self-explanatory, I think. I don't want a table of contents in the slides and the second level heading should define a new slide. 
