@@ -25,6 +25,7 @@ There are really only 4 tools required here: pandoc, GNU make, \LaTeX, and your 
 ## The org-mode header
 The first trick is to set things up correctly in the org-mode document header: 
 
+{% raw %}
 ```org-mode
 #+TITLE:     Some Title
 #+AUTHOR:    Me!
@@ -37,8 +38,9 @@ The first trick is to set things up correctly in the org-mode document header:
 #+LATEX_CLASS_OPTIONS: [aspectratio=1610]
 #+LATEX_HEADER: \setbeamertemplate{navigation symbols}{}%remove navigation symbols
 $0
-#+latex_header: \graphicspath{% raw %}{{/OSX/path/to/project/}{/Linux/path/to/project/}}{% endraw %}
+#+latex_header: \graphicspath{{/OSX/path/to/project/}{/Linux/path/to/project/}}
 ```
+{% endraw %}
 
 Most of that should be pretty self-explanatory, I think. I don't want a table of contents in the slides and the second level heading should define a new slide. 
 
