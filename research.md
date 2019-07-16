@@ -14,9 +14,8 @@ title: Research
 - Impact Metrics (with [John Gerring](https://liberalarts.utexas.edu/government/faculty/jg29775) and [Sebastian Karcher](https://www.sebastiankarcher.com)). In *The Production of Knowledge: Enhancing Progress in Social Science*. Cambridge University Press. Forthcoming.
 
 ## Working Papers
-- Left Parties and Education Spending: Surprising Findings in Latin America
-- [Harbors and Democracy](http://ssrn.com/abstract=3205037) (with [John Gerring](https://liberalarts.utexas.edu/government/faculty/jg29775), Tore Wig, and Andreas Tollefsen) (Under Review)
-- [Global Democracy for Europeans: A Demographic Story](https://ssrn.com/abstract_id=3287831) (with [John Gerring](https://liberalarts.utexas.edu/government/faculty/jg29775))
+- Left Parties and Education Spending: Findings from Latin America
+- [Harbors and Democracy](http://ssrn.com/abstract=3205037) (with [John Gerring](https://liberalarts.utexas.edu/government/faculty/jg29775), Tore Wig, and Andreas Tollefsen) (Under review)
+- [Global Democracy for Europeans: A Demographic Story](https://ssrn.com/abstract_id=3287831) (with [John Gerring](https://liberalarts.utexas.edu/government/faculty/jg29775)) (Under review)
 - Measuring Liberal Attitudes in Argentina Using Tweets (with [John Gerring](https://liberalarts.utexas.edu/government/faculty/jg29775) and [Steven Wilson](https://www.unr.edu/political-science/people/wilson-steven))
-- Education Prioritization and Learning Outcomes: Evidence from Latin America
-- Education and Democratization - A Causal Story
+- Education and Social Capital (with [John Gerring](https://liberalarts.utexas.edu/government/faculty/jg29775), [Emanual Coman](https://www.tcd.ie/Political_Science/people/comane), and [Stephen Jessee](http://laits.utexas.edu/~sjessee/)) (Under review)
