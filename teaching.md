@@ -3,7 +3,7 @@ layout: page
 title: Teaching
 ---
 * Instructor
-    + Introduction to American Government ([Spring 2017](files/sp17_gov310.pdf), [Fall 2018](files/fa18_gov310.pdf))
+    + Introduction to American Government ([Spring 2017](files/sp17_gov310.pdf), [Fall 2018](files/fa18_gov310.pdf), [Spring 2019](files/sp19_gov310.pdf))
 
 * Teaching Assistant
     + [Statistical Analysis in Political Science - Graduate Level](https://github.com/bapfeld/stats-1)
