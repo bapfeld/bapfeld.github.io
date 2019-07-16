@@ -18,3 +18,6 @@ title: Research
 - [Global Democracy for Europeans: A Demographic Story](https://ssrn.com/abstract_id=3287831) (with [John Gerring](https://liberalarts.utexas.edu/government/faculty/jg29775)) (Under review)
 - Measuring Liberal Attitudes in Argentina Using Tweets (with [John Gerring](https://liberalarts.utexas.edu/government/faculty/jg29775) and [Steven Wilson](https://www.unr.edu/political-science/people/wilson-steven))
 - Education and Social Capital (with [John Gerring](https://liberalarts.utexas.edu/government/faculty/jg29775), [Emanual Coman](https://www.tcd.ie/Political_Science/people/comane), and [Stephen Jessee](http://laits.utexas.edu/~sjessee/)) (Under review)
+
+## Other Work
+- [Spatial and Temporal University Database](files/univ_database.pdf)
