@@ -7,7 +7,7 @@ tags: [latex,makefile,code]
 I know there are plenty of great posts out there already about preparing slides using some combination or markdown/org-mode/LaTeX with a Makefile, but I found that no single one covered the precise combination of things I want to do. Also, some of the fundamental tools (coughPANDOCcough) have changed in breaking ways. So here's my take on combining a bunch of awesome plain text tools together for preparing lecture slides. 
 
 # My (weird?) situation
-Here's what I wanted to be able to do: write slides in org-mode[^orgvsmkdown] and then automatically convert them into four sets of pdf slides: one set to display in the classroom that includes things like `\pause`, a second "handout" set to distribute to students, a third "handout" set for student but with space next to the slides so they could print them and take notes next to the material, and a fourth instructor set that includes notes I've written myself. 
+Here's what I wanted to be able to do: write slides in org-mode[^orgvsmkdown] and then automatically convert them into four sets of pdf slides: one set to display in the classroom that includes things like `\pause`, a second "handout" set to distribute to students, a third "handout" set for students but with space next to the slides so they could print them and take notes next to the material, and a fourth instructor set that includes notes I've written myself. 
 
 I also wanted to be able to use a customized template for my beamer slides because I became obsessed with the idea that I should use official school colors for these things. A complicating factor here was that my template came in the form of a `.cls` file and not a `.sty`, causing pandoc to freak out.
 
@@ -44,7 +44,7 @@ Most of that should be pretty self-explanatory, I think. I don't want a table of
 The final line is really helpful. Pandoc's beamer template will automatically load the `graphicx` package. `\graphicspath` lets you specify a list of possible paths to check. That way in the slides a simple `\includegraphics{}` statement can just use a relative path. 
 
 ## The Templates
-Now come the templates. I have two of them, stored in a "templates" directory alongside the slide files. They're pretty simple. Here's a snippet of "slide_notes_header.tex" to give you an idea:
+Now come the templates. I have two of them, stored in a "templates" directory alongside the slide files. They're pretty simple. Here's a snippet of "slide_notes_header.tex" to give you an idea[^template_ref]:
 
 ```latex
 \usepackage{pgfpages}
@@ -120,7 +120,7 @@ $(lsdn)/%.pdf: lecture_notes/%.org lecture_notes/templates/slide_notes_header.te
 
 ```
 
-There are a few crucial bits here. First, it uses the new pandoc convention where you specify modifiers with the `+` syntax. In this case, I want to process plain vertical quotation marks as "smart" (sloping or wrapping in the correct direction on each side). Second, the `-H` flag allows me to set the header. This doesn't replace the entire pandoc template header, but rather supplements it.[^pandoctemplate] Third, I can set LaTeX class options with `==variable classoption=handout`. Doing this overwrites the classoption(s) set from within the org-mode document, though, so I have to also re-specify that aspectratio in two cases. 
+There are a few crucial bits here. First, it uses the new pandoc convention where you specify modifiers with the `+` syntax. In this case, I want to process plain vertical quotation marks as "smart" (sloping or wrapping in the correct direction on each side). Second, the `-H` flag allows me to set the header. This doesn't replace the entire pandoc template header, but rather supplements it.[^pandoctemplate] Third, I can set LaTeX class options with `--variable classoption=handout`. Doing this overwrites the classoption(s) set from within the org-mode document, though, so I have to also re-specify that aspectratio in two cases. 
 
 The display slides are more complicated because that's where I bring in the additional current events slides. I'm using `awk` to copy the slides (contained in a separate file) to just after the top matter in the slide file ends. Then everything gets processed as normal and cleaned up again at the end. Note that I *don't* include the current_events.org file as a prerequisite. If I were to do this, I'd end up remaking *all* of the display slides every time I updated that, which I don't want. This does mean that I have to force `make` to do what I want. I usually just use `touch` to update the timestamp on the slides I want to process. I know this breaks some of the automation, so if anybody has a better solution, I'm all ears. 
 
@@ -159,3 +159,5 @@ Here are a few other things I figured out for creating beamer presentations from
 [^orgvsmkdown]: Originally I wanted to write them in markdown, but I've graduated to Emacs, so my whole life is org-mode now, obviously. 
 
 [^pandoctemplate]: If you want to use your own template entirely, that's possible. Check the pandoc documentation. 
+
+[^template_ref]: I *believe* the first part of this template comes from Andrew Goldstone's [very helpful post](https://andrewgoldstone.com/blog/2014/12/24/slides/) on beamer slides. 
