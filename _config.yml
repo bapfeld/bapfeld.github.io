@@ -5,8 +5,8 @@ permalink:           pretty
 
 # Setup
 title:               Brendan Apfeld
-tagline:             'Graduate Student - University of Texas at Austin'
-description:         'Professional website for Brendan Apfeld'
+tagline:             'Data scientist and political science researcher'
+description:         'Academic website for Brendan Apfeld'
 url:                 http://www.brendanapfeld.com
 baseurl:             ''
 paginate:            5
