@@ -6,17 +6,17 @@ title: Teaching
     + Introduction to American Government ([Spring 2017](files/sp17_gov310.pdf), [Fall 2018](files/fa18_gov310.pdf), [Spring 2019](files/sp19_gov310.pdf))
 
 * Teaching Assistant
-    + [Statistical Analysis in Political Science - Graduate Level](https://github.com/bapfeld/stats-1)
-        + [CLT in Action Shiny App](https://brendan-apfeld.shinyapps.io/CLT-in-action/)
-        + [Efficiency GIF](https://www.brendanapfeld.com/stats1/estimators)
+    + Statistical Analysis in Political Science - Graduate Level
+        + CLT in Action Shiny App
+        + Efficiency GIF
     + Lead TA, Introduction to American Government (online)
     + Supplemental Instructor, Introduction to American Government
     + Poverty & Politics
     + Poverty & Development
 
 * Short Courses & Presentations
-    + [Using R Effectively](https://github.com/bapfeld/using-r-effectively)
-    + [Bibliographies in LaTeX](https://www.brendanapfeld.com/presentations/latex-bib/latex_bibs.html)
+    + Using R Effectively
+    + Bibliographies in LaTeX
     + American Government Overview presented to the Pan-Africa Youth Leadership Program, April 24, 2017
 
 * Classroom Teacher
