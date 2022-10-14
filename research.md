@@ -4,6 +4,9 @@ title: Research
 ---
 ## Publications
 
+### Books
+- [The Deep Roots of Modern Democracy](https://www.cambridge.org/core/books/deep-roots-of-modern-democracy/6AA764716C8F6BC7FF8A64F6CA2DA565). (with [John Gerring](https://liberalarts.utexas.edu/government/faculty/jg29775), Tore Wig, and Andreas Tollefsen)
+
 ### Articles (Peer-Reviewed)
 - [Education Prioritization and Language Spread](https://www.sciencedirect.com/science/article/pii/S0362331919300709). (with [Amy Liu](http://www.amyhliu.com/)) *Social Science Journal*, Forthcoming.
 - [Exogenous Shocks and Candidate Support: Evidence from Brazil 2014](http://www.tandfonline.com/doi/full/10.1080/17457289.2016.1178647) (with [J. Alex Branham](https://jabranham.com)), *Journal of Elections, Public Opinion, and Parties*, 26 (3): 336-353.
