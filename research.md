@@ -8,7 +8,7 @@ title: Research
 - [The Deep Roots of Modern Democracy](https://www.cambridge.org/core/books/deep-roots-of-modern-democracy/6AA764716C8F6BC7FF8A64F6CA2DA565). (with [John Gerring](https://liberalarts.utexas.edu/government/faculty/jg29775), Tore Wig, and Andreas Tollefsen)
 
 ### Articles (Peer-Reviewed)
-- Higher Education and Cultural Liberalism. Brendan Apfeld, Emanuel Coman, John Gerring, and Stephen Jessee. \textit{Journal of Politics}. Forthcoming.
+- Higher Education and Cultural Liberalism. Brendan Apfeld, Emanuel Coman, John Gerring, and Stephen Jessee. Journal of Politics. Forthcoming.
 - [Higher Education and Party Ideology](https://doi.org/10.1017/psrm.2022.33). Brendan Apfeld, Emanuel Coman, John Gerring, and Stephen Jessee. *Political Science Research and Methods*. 2022.
 - [Education and Social Capital](https://doi.org/10.1017/XPS.2021.6). Brendan Apfeld, Emanuel Coman, John Gerring, and Stephen Jessee. *Journal of Experimental Political Science*. 2021.
 
